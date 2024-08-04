@@ -1,0 +1,38 @@
+<body>
+  <div class="container">
+    <h1>Task List</h1>
+    <button [routerLink]="['/upsert-task', 0, 0]" *ngIf="roleId == 3" class="create-button">Create</button>
+    <button [routerLink]="['/upsertUser', 0]" *ngIf="roleId == 1" class="create-button">Create User</button>
+    <button [routerLink]="['/upsertUser', 1]" *ngIf="roleId == 3" class="create-button">Update User Details</button>
+    <button (click)="logout()" class="create-button">Logout</button>
+
+    <div class="loader-overlay" *ngIf="isLoading"><div class="loader"></div></div>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Created On</th>
+          <th>Finished By</th>
+          <th>Status</th>
+          <th *ngIf="roleId != 3">Assigned To</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody *ngIf="dataFound">
+        @for(task of taskDetails; track task.TaskId){
+        <tr>
+          <td>{{task.taskName}}</td>
+          <td>{{task.createdDate | date : 'EEEE, MMMM d, y'}}</td>
+          <td>{{task.finishedDate | date : 'EEEE, MMMM d, y'}}</td>
+          <td>{{task.taskStatus}}</td>
+          <td *ngIf="roleId != 3">{{task.userName}}</td>
+          <td [routerLink]="['/upsert-task', task.taskId, closedTaskStatusId]">Update</td>
+        </tr>
+        }
+      </tbody>
+      <tbody *ngIf="!dataFound">
+        No Data Found
+      </tbody>
+    </table>
+  </div>
+</body>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create User</title>
+</head>
+<body>
+  <div class="form-container">
+    <div class="loader-overlay" *ngIf="isLoading"><div class="loader"></div></div>
+    <form name="taskCreationForm">
+      <label for="name" *ngIf="!isUpdate">UserName:</label>
+      <input type="text" id="username" *ngIf="!isUpdate" name="username" [(ngModel)]="upsertUserRequestModel.UserName" required>
+
+      <label for="name">First Name:</label>
+      <input type="text" id="firstname" name="firstname" [(ngModel)]="upsertUserRequestModel.FirstName" required>
+
+      <label for="name">Last Name:</label>
+      <input type="text" id="lastname" name="lastname" [(ngModel)]="upsertUserRequestModel.LastName" required>
+
+      <label for="name" *ngIf="!isUpdate">Email:</label>
+      <input type="text" id="email" name="email" *ngIf="!isUpdate" [(ngModel)]="upsertUserRequestModel.Email" required>
+
+      <label for="name" *ngIf="isUpdate">Password:</label>
+      <input type="text" id="password" name="password" *ngIf="isUpdate" [(ngModel)]="upsertUserRequestModel.Password" required>
+
+      <label for="manager" *ngIf="!isUpdate">Manager:</label>
+      <select id="manager" name="manager" *ngIf="!isUpdate" [(ngModel)]="upsertUserRequestModel.ManagerId">
+        <option value="0">Select Manager</option>
+        @for(manager of managerDetailList; track manager.Id){
+        <option value="manager.id">{{manager.name}}</option>
+        }
+      </select>
+
+      <label for="role" *ngIf="!isUpdate">Role</label>
+      <select id="role" *ngIf="!isUpdate" name="role" [(ngModel)]="upsertUserRequestModel.RoleId">
+        <option [ngValue]="0">Select User Role</option>
+        <option [ngValue]="2">Manager</option>
+        <option [ngValue]="3">Employee</option>
+      </select>
+
+      <button type="button" *ngIf="isUpdate" (click)="updateUser(upsertUserRequestModel)">Update</button>
+      <button type="button" *ngIf="!isUpdate" (click)="createUser(upsertUserRequestModel)">Create</button>
+      <br />
+      <button [routerLink]="['/taskList']" class="button">Back</button>
+    </form>
+  </div>
+</body>
+</html>

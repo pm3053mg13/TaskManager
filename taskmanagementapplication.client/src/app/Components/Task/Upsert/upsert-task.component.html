@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create a task</title>
+</head>
+<body>
+  <div class="form-container">
+    <div class="loader-overlay" *ngIf="isLoading"><div class="loader"></div></div>
+    <form name="taskCreationForm">
+      <label for="name" *ngIf="taskId <= 0">Name:</label>
+      <input type="text" id="name" name="name" *ngIf="taskId <= 0" [(ngModel)]="taskDetails.TaskName" required>
+
+      <label for="subject" *ngIf="taskId > 0">Status:</label>
+      <select id="subject" name="subject" *ngIf="taskId > 0" [(ngModel)]="taskDetails.TaskStatusId">
+        <option [ngValue]="0">Select Status</option>
+        <option [ngValue]="1">Open</option>
+        <option [ngValue]="2">In-Progress</option>
+        <option [ngValue]="3">Closed</option>
+      </select>
+
+      <label for="subject" *ngIf="taskId <= 0">Task Finished in (Days):</label>
+      <select id="subject" name="subject" *ngIf="taskId <= 0" [(ngModel)]="taskDetails.DaysToFinish">
+        <option [ngValue]="0">Select Finishing Days</option>
+        <option [ngValue]="1">1</option>
+        <option [ngValue]="2">2</option>
+        <option [ngValue]="3">3</option>
+        <option [ngValue]="5">5</option>
+      </select>
+
+      <button type="button" *ngIf="taskId > 0" (click)="upsertTask(taskDetails)">Update</button>
+      <button type="button" *ngIf="taskId <= 0" (click)="createTask(taskDetails)">Create</button>
+      <br />
+      <button [routerLink]="['/taskList']" class="button">Back</button>
+    </form>
+  </div>
+</body>
+</html>

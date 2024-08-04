@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="login.component.css">
+</head>
+<body>
+  <div class="container">
+    <label *ngIf="isError" class="error">Invalid Email and Password.</label>
+    <label *ngIf="unAuthorized" class="error">Token is expired, please login again.</label>
+    <div class="loader-overlay" *ngIf="isLoading"><div class="loader"></div></div>
+    <form class="login-form" (submit)="login()">
+      <h2>Login</h2>
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" [(ngModel)]="loginModel.username" required>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" [(ngModel)]="loginModel.password" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</body>
+</html>

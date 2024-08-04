@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Piyush Munjal\\source\\repos\\TaskManagementApplication\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5A0C06-400E-4CAA-99E5-8683B437E06A}|TaskManagementApplication.Server\\TaskManagementApplication.Server.csproj|c:\\users\\piyush munjal\\source\\repos\\taskmanagementapplication\\taskmanagementapplication.server\\infrastructure\\authorization\\userauthorizationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF5A0C06-400E-4CAA-99E5-8683B437E06A}|TaskManagementApplication.Server\\TaskManagementApplication.Server.csproj|solutionrelative:taskmanagementapplication.server\\infrastructure\\authorization\\userauthorizationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5A0C06-400E-4CAA-99E5-8683B437E06A}|TaskManagementApplication.Server\\TaskManagementApplication.Server.csproj|c:\\users\\piyush munjal\\source\\repos\\taskmanagementapplication\\taskmanagementapplication.server\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF5A0C06-400E-4CAA-99E5-8683B437E06A}|TaskManagementApplication.Server\\TaskManagementApplication.Server.csproj|solutionrelative:taskmanagementapplication.server\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF5A0C06-400E-4CAA-99E5-8683B437E06A}|TaskManagementApplication.Server\\TaskManagementApplication.Server.csproj|c:\\users\\piyush munjal\\source\\repos\\taskmanagementapplication\\taskmanagementapplication.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF5A0C06-400E-4CAA-99E5-8683B437E06A}|TaskManagementApplication.Server\\TaskManagementApplication.Server.csproj|solutionrelative:taskmanagementapplication.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{440BA54B-A25B-4AB0-9D1B-371E901B7CE0}|taskmanagementapplication.client\\taskmanagementapplication.client.esproj|c:\\users\\piyush munjal\\source\\repos\\taskmanagementapplication\\taskmanagementapplication.client\\src\\app\\components\\user\\user-upsert.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{440BA54B-A25B-4AB0-9D1B-371E901B7CE0}|taskmanagementapplication.client\\taskmanagementapplication.client.esproj|solutionrelative:taskmanagementapplication.client\\src\\app\\components\\user\\user-upsert.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserAuthorizationHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Piyush Munjal\\source\\repos\\TaskManagementApplication\\TaskManagementApplication.Server\\Infrastructure\\Authorization\\UserAuthorizationHandler.cs",
+              "RelativeDocumentMoniker": "TaskManagementApplication.Server\\Infrastructure\\Authorization\\UserAuthorizationHandler.cs",
+              "ToolTip": "C:\\Users\\Piyush Munjal\\source\\repos\\TaskManagementApplication\\TaskManagementApplication.Server\\Infrastructure\\Authorization\\UserAuthorizationHandler.cs",
+              "RelativeToolTip": "TaskManagementApplication.Server\\Infrastructure\\Authorization\\UserAuthorizationHandler.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAIA4wBwAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T19:34:23.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TaskController.cs",
+              "DocumentMoniker": "C:\\Users\\Piyush Munjal\\source\\repos\\TaskManagementApplication\\TaskManagementApplication.Server\\Controllers\\TaskController.cs",
+              "RelativeDocumentMoniker": "TaskManagementApplication.Server\\Controllers\\TaskController.cs",
+              "ToolTip": "C:\\Users\\Piyush Munjal\\source\\repos\\TaskManagementApplication\\TaskManagementApplication.Server\\Controllers\\TaskController.cs",
+              "RelativeToolTip": "TaskManagementApplication.Server\\Controllers\\TaskController.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAWwDUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T19:35:52.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Piyush Munjal\\source\\repos\\TaskManagementApplication\\TaskManagementApplication.Server\\Program.cs",
+              "RelativeDocumentMoniker": "TaskManagementApplication.Server\\Program.cs",
+              "ToolTip": "C:\\Users\\Piyush Munjal\\source\\repos\\TaskManagementApplication\\TaskManagementApplication.Server\\Program.cs",
+              "RelativeToolTip": "TaskManagementApplication.Server\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T19:34:33.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "user-upsert.component.ts",
+              "DocumentMoniker": "C:\\Users\\Piyush Munjal\\source\\repos\\TaskManagementApplication\\taskmanagementapplication.client\\src\\app\\Components\\User\\user-upsert.component.ts",
+              "RelativeDocumentMoniker": "taskmanagementapplication.client\\src\\app\\Components\\User\\user-upsert.component.ts",
+              "ToolTip": "C:\\Users\\Piyush Munjal\\source\\repos\\TaskManagementApplication\\taskmanagementapplication.client\\src\\app\\Components\\User\\user-upsert.component.ts",
+              "RelativeToolTip": "taskmanagementapplication.client\\src\\app\\Components\\User\\user-upsert.component.ts",
+              "ViewState": "AQIAACUAAAAAAAAAAAAQwCsAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-08-04T19:33:23.353Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

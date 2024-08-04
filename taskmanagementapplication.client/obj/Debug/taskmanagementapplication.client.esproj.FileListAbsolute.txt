@@ -1,0 +1,1 @@
+C:\Users\Piyush Munjal\source\repos\TaskManagementApplication\taskmanagementapplication.client\obj\Debug\taskmanagementapplication.client.esproj.CoreCompileInputs.cache
